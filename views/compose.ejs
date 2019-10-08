@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <%- include('partials/header'); -%>
+  </head>
+  <body>
+    <h1>Compose</h1> <br>
+
+    <form class="" action="/compose" method="post">
+      <label for="usr">Title:</label>
+      <input type="text" name="composeText" value="" class="form-control">
+      <label for="usr">Post:</label>
+      <textarea class="form-control" name="composeContent" rows="5" id="comment"></textarea>
+      <br>
+      <button type="submit" class="btn btn-primary ">submit</button>
+    </form>
+
+  </body>
+  <%- include('partials/footer'); -%>
+</html>

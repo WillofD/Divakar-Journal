@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <meta charset="utf-8">
+
+    <title></title>
+    <%- include('partials/header'); -%>
+  </head>
+<body>
+  <% posts.forEach(function(posts){ %>
+
+
+    <h1>
+        <%= posts.title %>
+    </h1>
+    <p>
+      <%= posts.content.substring(0,100); %>
+      </p>
+      <a href="posts/  <%= posts.title %>">Read more</a>
+
+<%  }); %>
+
+  </body>
+  <%- include('partials/footer'); -%>
+</html>
